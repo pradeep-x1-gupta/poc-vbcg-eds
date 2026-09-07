@@ -33,13 +33,9 @@ footer .footer .footer-brand {
 footer .footer .footer-brand::before {
   content: '';
   display: inline-block;
-  width: 30px;
-  height: 23px;
-  background-image:
-    radial-gradient(circle at 5px 14px, #f0a028 4px, transparent 5px),
-    radial-gradient(circle at 15px 8px, #f0a028 5px, transparent 6px),
-    radial-gradient(circle at 25px 14px, #e8852c 4px, transparent 5px);
-  background-repeat: no-repeat;
+  width: 38px;
+  height: 24px;
+  background: url('/icons/risant-logo.svg') left center / contain no-repeat;
 }
 
 footer .footer a:any-link {

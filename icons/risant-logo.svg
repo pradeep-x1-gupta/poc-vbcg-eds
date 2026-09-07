@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 84" fill="none" role="img" aria-label="Risant Health">
+  <defs>
+    <linearGradient id="risant-sun" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e8852c"/>
+      <stop offset="1" stop-color="#f4ab43"/>
+    </linearGradient>
+  </defs>
+
+  <!-- orange sunburst fan, radiating up from a bottom pivot between the figures -->
+  <g transform="translate(70 74)" fill="url(#risant-sun)">
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(-50)"/>
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(-30)"/>
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(-10)"/>
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(10)"/>
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(30)"/>
+    <path d="M-2.5 -6 L-5 -42 L5 -42 L2.5 -6 Z" transform="rotate(50)"/>
+  </g>
+
+  <!-- orange sun disc at top center -->
+  <circle cx="70" cy="22" r="13" fill="url(#risant-sun)"/>
+
+  <!-- left figure -->
+  <circle cx="28" cy="27" r="14" fill="#fff"/>
+  <path d="M9 82 L9 60 Q9 46 28 46 Q47 46 47 60 L47 82 Z" fill="#fff"/>
+
+  <!-- right figure -->
+  <circle cx="112" cy="27" r="14" fill="#fff"/>
+  <path d="M93 82 L93 60 Q93 46 112 46 Q131 46 131 60 L131 82 Z" fill="#fff"/>
+</svg>

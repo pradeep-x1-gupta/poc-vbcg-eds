@@ -164,13 +164,9 @@ header nav .nav-brand a:any-link {
 header nav .nav-brand a::before {
   content: '';
   display: inline-block;
-  width: 34px;
-  height: 26px;
-  background-image:
-    radial-gradient(circle at 6px 16px, #f0a028 5px, transparent 6px),
-    radial-gradient(circle at 17px 9px, #f0a028 6px, transparent 7px),
-    radial-gradient(circle at 28px 16px, #e8852c 5px, transparent 6px);
-  background-repeat: no-repeat;
+  width: 47px;
+  height: 28px;
+  background: url('/icons/risant-logo.svg') left center / contain no-repeat;
 }
 
 header nav .nav-brand img {

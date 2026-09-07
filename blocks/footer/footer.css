@@ -19,23 +19,18 @@ footer .footer p:last-child {
   margin-bottom: 0;
 }
 
+/* full Risant Health logo lockup as the SVG; text kept for accessible name
+   but visually replaced by the image */
 footer .footer .footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-family: var(--heading-font-family);
-  font-size: 22px;
-  font-weight: 700;
+  display: block;
+  width: 171px;
+  height: 22px;
   margin-bottom: 24px;
-}
-
-footer .footer .footer-brand::before {
-  content: '';
-  display: inline-block;
-  width: 38px;
-  height: 24px;
   background: url('/icons/risant-logo.svg') left center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
 }
 
 footer .footer a:any-link {

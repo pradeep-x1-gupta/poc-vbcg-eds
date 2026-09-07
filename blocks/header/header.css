@@ -150,23 +150,17 @@ header .nav-brand {
   line-height: 1;
 }
 
+/* the full Risant Health logo lockup (mark + wordmark) is the SVG; the link
+   text is kept for the accessible name but visually replaced by the image */
 header nav .nav-brand a:any-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-family: var(--heading-font-family);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-header nav .nav-brand a::before {
-  content: '';
-  display: inline-block;
-  width: 47px;
-  height: 28px;
+  display: block;
+  width: 194px;
+  height: 25px;
   background: url('/icons/risant-logo.svg') left center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
 }
 
 header nav .nav-brand img {

@@ -77,6 +77,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: none;
   margin: 0;
@@ -332,23 +336,42 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-/* care-guide page layout: sticky left jump-nav + guide cards on the right */
+/* care-guide page layout: sticky left jump-nav + guide cards on the right.
+   The section itself is the grid container — decorateSections makes each block
+   a *-wrapper div that is a DIRECT child of the section, so the grid and column
+   placement must target that level (not an inner div). */
 @media (width >= 900px) {
-  main > .section.guide-layout > div {
+  main > .section.guide-layout {
     display: grid;
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 240px 1fr;
     column-gap: 40px;
     align-items: start;
     max-width: 1280px;
+    margin: 40px auto;
+    padding: 0 32px;
   }
 
-  main > .section.guide-layout > div > .guide-nav-wrapper {
+  /* neutralize the default centered inner-wrapper width so the grid columns
+     control layout */
+  main > .section.guide-layout > div {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* nav in the left column, spanning all rows and stretching to full height so
+     the sticky nav inside it has scroll travel (align-self must be stretch, not
+     start, or the wrapper collapses to its content height and never sticks) */
+  main > .section.guide-layout > .guide-nav-wrapper {
     grid-column: 1;
-    grid-row: 1 / 999;
+    grid-row: 1 / span 9999;
+    align-self: stretch;
   }
 
-  main > .section.guide-layout > div > *:not(.guide-nav-wrapper) {
+  /* everything else stacks in the right column */
+  main > .section.guide-layout > *:not(.guide-nav-wrapper) {
     grid-column: 2;
+    min-width: 0;
   }
 }
 

@@ -3,6 +3,9 @@
   border-radius: 4px;
   overflow: hidden;
   margin: 28px 0;
+
+  /* clear the fixed header when a jump link scrolls to this card */
+  scroll-margin-top: calc(var(--nav-height) + 20px);
 }
 
 .care-guide .care-guide-title {

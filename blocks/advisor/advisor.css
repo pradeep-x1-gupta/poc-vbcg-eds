@@ -1,0 +1,82 @@
+.advisor.block {
+  margin: 24px 0 8px;
+}
+
+.advisor .advisor-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--brand-navy);
+  margin-bottom: 14px;
+}
+
+.advisor .advisor-sparkle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: var(--brand-navy);
+  clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
+}
+
+.advisor .advisor-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--brand-blue);
+  border-radius: 50%;
+  color: var(--brand-blue);
+  font-size: 11px;
+  font-style: italic;
+  font-family: georgia, serif;
+}
+
+.advisor .advisor-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 900px;
+}
+
+.advisor .advisor-input {
+  flex: 1;
+  box-sizing: border-box;
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid #b9c4d0;
+  border-radius: 4px;
+  font-size: 17px;
+  color: var(--text-color);
+}
+
+.advisor .advisor-input::placeholder {
+  color: #8a97a6;
+}
+
+.advisor .advisor-input:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+}
+
+.advisor .advisor-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  background: #7fb0da;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.advisor .advisor-submit:hover {
+  background: var(--brand-blue);
+}

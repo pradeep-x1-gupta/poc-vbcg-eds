@@ -13,11 +13,18 @@
 :root {
   /* colors */
   --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --light-color: #f2f5f8;
+  --dark-color: #4a5568;
+  --text-color: #14284b;
+  --link-color: #1c6bba;
+  --link-hover-color: #114a82;
+
+  /* Risant Health brand */
+  --brand-navy: #0d1f3c;
+  --brand-navy-dark: #0a1730;
+  --brand-blue: #1c6bba;
+  --card-header-bg: #cfe3f3;
+  --border-color: #d5dde5;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -107,8 +114,9 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
+  color: var(--brand-navy);
   scroll-margin: 40px;
 }
 
@@ -323,3 +331,24 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* care-guide page layout: sticky left jump-nav + guide cards on the right */
+@media (width >= 900px) {
+  main > .section.guide-layout > div {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 40px;
+    align-items: start;
+    max-width: 1280px;
+  }
+
+  main > .section.guide-layout > div > .guide-nav-wrapper {
+    grid-column: 1;
+    grid-row: 1 / 999;
+  }
+
+  main > .section.guide-layout > div > *:not(.guide-nav-wrapper) {
+    grid-column: 2;
+  }
+}
+

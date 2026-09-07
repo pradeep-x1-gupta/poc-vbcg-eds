@@ -1,0 +1,28 @@
+.guide-nav .guide-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.guide-nav .guide-nav-list a:any-link {
+  color: var(--brand-blue);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.guide-nav .guide-nav-list a:hover {
+  text-decoration: underline;
+}
+
+.guide-nav .guide-nav-list a.guide-nav-lead {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+@media (width >= 900px) {
+  .guide-nav.block {
+    position: sticky;
+    top: 84px;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.risanthealth.org/index",
+  "path": "index",
+  "timestamp": "2026-09-07T06:09:57.054Z",
+  "title": "Value-based Care Guides Index | Risant Health",
+  "template": "index",
+  "blocks": [
+    "advisor",
+    "specialty-index"
+  ]
+}

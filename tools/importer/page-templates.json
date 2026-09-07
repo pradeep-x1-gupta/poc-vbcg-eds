@@ -1,0 +1,39 @@
+{
+  "templates": [
+    {
+      "name": "index",
+      "description": "Value-based Care Guides index/portal landing page",
+      "urls": [
+        "https://www.risanthealth.org/index"
+      ],
+      "blocks": [
+        {
+          "name": "advisor",
+          "instances": [".advisor-search"]
+        },
+        {
+          "name": "specialty-index",
+          "instances": [".specialty-links"]
+        }
+      ]
+    },
+    {
+      "name": "allergy-care-guide",
+      "description": "Allergy Care Guide — jump nav plus stacked clinical guide cards",
+      "sectionStyle": "guide-layout",
+      "urls": [
+        "https://www.risanthealth.org/allergy-care-guide"
+      ],
+      "blocks": [
+        {
+          "name": "guide-nav",
+          "instances": [".guide-jump-nav"]
+        },
+        {
+          "name": "care-guide",
+          "instances": [".care-guide-card"]
+        }
+      ]
+    }
+  ]
+}

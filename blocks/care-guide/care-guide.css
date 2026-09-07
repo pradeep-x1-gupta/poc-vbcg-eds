@@ -1,0 +1,85 @@
+.care-guide.block {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 28px 0;
+}
+
+.care-guide .care-guide-title {
+  background: var(--card-header-bg);
+  color: var(--brand-navy);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 22px;
+  padding: 14px 24px;
+}
+
+.care-guide .care-guide-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.care-guide .care-guide-quick,
+.care-guide .care-guide-referral {
+  padding: 20px 24px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.care-guide .care-guide-referral {
+  border-left: 1px solid var(--border-color);
+}
+
+.care-guide .care-guide-body h3,
+.care-guide .care-guide-body h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin: 14px 0 4px;
+}
+
+.care-guide .care-guide-body h3:first-child,
+.care-guide .care-guide-body h4:first-child {
+  margin-top: 0;
+}
+
+.care-guide .care-guide-body p {
+  margin: 4px 0;
+}
+
+.care-guide .care-guide-body ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+
+.care-guide .care-guide-body a:any-link {
+  color: var(--brand-blue);
+  text-decoration: underline;
+}
+
+.care-guide .care-guide-comms {
+  border-top: 1px solid var(--border-color);
+  padding: 16px 24px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.care-guide .care-guide-comms > p:first-child,
+.care-guide .care-guide-comms h3:first-child,
+.care-guide .care-guide-comms h4:first-child {
+  font-weight: 700;
+  color: var(--brand-navy);
+  margin-top: 0;
+}
+
+@media (width < 700px) {
+  .care-guide .care-guide-body {
+    grid-template-columns: 1fr;
+  }
+
+  .care-guide .care-guide-referral {
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+  }
+}

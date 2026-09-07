@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "url": "https://www.risanthealth.org/allergy-care-guide",
+  "path": "allergy-care-guide",
+  "timestamp": "2026-09-07T06:14:49.445Z",
+  "title": "Allergy Care Guide | Risant Health",
+  "template": "allergy-care-guide",
+  "blocks": [
+    "guide-nav",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide",
+    "care-guide"
+  ]
+}
